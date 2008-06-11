@@ -1,12 +1,12 @@
 module FancyViews
-	module ToSentence
-		def to_sentence; self.to_s; end
-	end
+  module ToSentence
+    def to_sentence; self.to_s; end
+  end
 
-	module LabelHelper
-		def label_with_error_messages
-			#
-		end
+  module LabelHelper
+    def label_with_error_messages
+      #
+    end
   end
 end
 

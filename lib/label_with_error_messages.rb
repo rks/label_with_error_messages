@@ -12,7 +12,7 @@ module FancyViews
       model = instance_variable_get "@#{object_name}"
       if model && model.errors.on(method)
         text ||= method.to_s.humanize + " " + model.errors.on(method).to_sentence
-        options[:class] = (options[:class] || "") << " with_errors"
+        options[:class] = (options[:class] || "") + " with_errors"
         options[:class].strip!
       end
       label_without_error_messages(object_name, method, text, options)
